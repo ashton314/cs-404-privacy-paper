@@ -1,0 +1,17 @@
+#+TITLE: Notes for Privacy Paper
+
+* Brainstorm
+
+ - Encryption as an indispensable means to the end of privacy
+ - Do I need to spend time on /digital privacy as a right/?
+ - I should identify stakeholders and who should care about privacy:
+   + Ordinary citizens and how they use encryption
+     * Interpersonal communications
+     * Online services (e.g. banking)
+   + Corporations
+     * Protecting user data (/ahem/ Equifax!)
+     * Preventing bad actors from damaging our digital infrastructure.
+
+ - It is a contradiction in will for the Attorney General to want access to every piece of encrypted communication while at the same time wanting to protect the US from foreign interference.
+
+* Outline
