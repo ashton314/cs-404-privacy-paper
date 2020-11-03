@@ -30,6 +30,10 @@
  - Technical issues around government's request
    + Keys under doormats
    + Discussion of the importance of mechanisms to protect us against violations of our rights
+ - Generalize responsibility of companies to protect user data
+   + Equifax breach as example of what happens when encryption is /not/ used
+   + GDPR requirements (← ?)
+   + Encryption provides privacy from prying governments and prying applications and corporations
  - Resolution of case study
    + Government was able to crack encryption with large investment of resources
    + battle continues today; EARN-IT is the latest thrust

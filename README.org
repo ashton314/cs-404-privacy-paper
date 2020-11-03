@@ -1,0 +1,8 @@
+#+TITLE: CS 404 Group Paper on Privacy
+#+AUTHOR: Ashton Wiersdorf
+
+Group paper on privacy. I'm doing my work here so my classmates can see my progress if they want to. There's also a Google Doc where we're putting together the final thing, but I take issue with this:
+
+ - Using a web browser as a text editor is an inferior solution; unless you /absolutely/ need tight, real-time collaboration, it's better to work on a document in the comfort of a native desktop application. (In my case, Emacs.)
+ - Google tracks you, and this is a paper on privacy—why should I write a paper on the bad things Google is doing using Google's products?
+ - Using a pull-request edit flow lets people explain their edits in greater detail and granularity.
