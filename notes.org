@@ -14,4 +14,22 @@
 
  - It is a contradiction in will for the Attorney General to want access to every piece of encrypted communication while at the same time wanting to protect the US from foreign interference.
 
+ - Case study: Apple vs. FBI in the San Bernardino Case
+
 * Outline
+
+ - Summary of case study: San Bernardino Case
+ - Generalize: government has pushed for "responsible encryption" "warrant-compatible encryption"
+ - Exploration of conflicting ethical values
+   + Justice Department's arguments:
+     * Protection of the people
+     * Laws demand that Apple and technology suppliers respond to All Writs Act, subpoenas, etc.
+   + Apple's arguments:
+     * Free speech: Apple doesn't want to create software it considers to be unethical
+     * Duty to protect everyone's privacy
+ - Technical issues around government's request
+   + Keys under doormats
+   + Discussion of the importance of mechanisms to protect us against violations of our rights
+ - Resolution of case study
+   + Government was able to crack encryption with large investment of resources
+   + battle continues today; EARN-IT is the latest thrust
