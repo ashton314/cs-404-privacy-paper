@@ -34,12 +34,22 @@ Encryption is important for protecting people. What if it protects the wrong kin
 
    # Locked iPhone; Apple wouldn't comply, yadda yadda yadda...
 
+DOJ insists that it's not weakening encryption, but it really is.
+
 But not all governments are benevolent.
 
 ** Chinese Social Capital and COVID-19 Censorship
 
    # With pervasive surveillance, the American Revolution would never
    # have happened.
+
+* Conclusion
+
+Weakening encryption will weaken the means by which we can solve the root of these problems. The difficulty lies in that the victims of weakening encryption are often further removed from the problem than the victims of /not/ weakening encryption.
+
+We have harm-avoidance and justice pitted against freedom, privacy, and security. This is a difficult problem, but I believe we can find solutions /not/ through weakening encryption, but by focusing on the root problems and using side-channel attacks.
+
+# Consider looking into homomorphic encryption
 
 * Footnotes
 
