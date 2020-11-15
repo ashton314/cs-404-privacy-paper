@@ -37,3 +37,30 @@
  - Resolution of case study
    + Government was able to crack encryption with large investment of resources
    + battle continues today; EARN-IT is the latest thrust
+
+* Outline 2
+
+** Structure
+
+ - Let's do a delayed thesis
+ - Bring up opposing stories:
+   1. Child pornography
+   2. Equifax breach
+   3. San Bernardino Shooter
+   4. Social credit system in China; Russian interference in 2016 elections; communication censorship
+
+Ideas for graphics:
+
+ - Number of people affected by Equifax breach vs. number of people affected by revenge porn, etc.
+
+** Body
+
+ - Conclusion: weakening encryption will weaken the means by which we can solve the root of these problems
+ - The difficulty lies in that the victims of weakening encryption are often further removed from the problem than the victims of /not/
+
+* Data
+
+** Graphic on number of encrypted servers in use                                            :ATTACH:
+   :PROPERTIES:
+   :ID:       D35F1193-F0FC-4876-850D-7E579FD61C4D
+   :END:

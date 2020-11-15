@@ -1,3 +1,46 @@
 #+TITLE: Privacy: The Role of Encryption
 #+AUTHOR: Ashton Wiersdorf
 
+# Getting started is always the hardest part
+
+For this section we'll discuss the role encryption plays in privacy and some of the ethical issues associated with it's use.
+
+* Case Studies
+
+** Child Pornography
+
+One year ago the New York Times ran an article [fn:1] on two sisters who, ten years after being sexually abused by their father, continue to experience exposeure and harassment because their father shared explicit photoes of them online. Those photos continue to circulate in part because companies do not filter uploaded content.
+
+The NYT article details some processes by which uploaded content can be quickly screened for matches in databases of "illegal" images.
+
+This is part of the thrust of the EARN-IT Act. However, the changes present in the EARN-IT act have some less helpful ramifications. The EARN-IT act would compel all online service operators to scan any user-uploaded material for content deemed "illegal".
+
+This would extend to chat platforms and other means of communication.
+
+*** End-to-end encryption
+
+    # Include explaination of e2e systems here
+
+Let's look at a case when encryption was /not/ employed as it should have been.
+
+** Equifax Databreach
+
+   # I might be able to find a good graphic to illustrate the scale of
+   # the damage of the breach
+
+Encryption is important for protecting people. What if it protects the wrong kinds of people?
+
+** San Bernardino Shooter Case
+
+   # Locked iPhone; Apple wouldn't comply, yadda yadda yadda...
+
+But not all governments are benevolent.
+
+** Chinese Social Capital and COVID-19 Censorship
+
+   # With pervasive surveillance, the American Revolution would never
+   # have happened.
+
+* Footnotes
+
+[fn:1] NYT; Child Abusers 
