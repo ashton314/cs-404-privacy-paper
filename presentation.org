@@ -3,20 +3,22 @@
 
 * Introduction
 
-What would you think if there was a law passed that said it was illegal to use any kind of lock, unless your city government also had a key to that lock? Would that be problematic? Can you think of any justification that could be offered for such a scheme? What if you had to leave those keys under your doormat? The government tells you it's to keep you safe, and so that law enforcement can more easly serve warrants. What would you think of that?
+# Read this section a little slowly
 
-I'd like to talk about the locks of our digital world, encryption algorithms, the role they play in privacy, and current discussions about legislating that keys be kept under our doormats.
+What would you think if there was a law passed that said it was illegal to use any kind of lock, unless your city government also had a key to that lock? Would that be problematic? Can you think of any justification that could be offered for such a scheme? What if you had to leave those keys under your doormat? The government tells you it's to keep you safe, and so that law enforcement can more easily serve warrants. What would you think of that?
+
+I'd like to talk about the locks of our digital world, encryption algorithms, the role they play in privacy, and current discussion about mandating that the government be able to access any encrypted piece of data---essentially leaving our keys under our doormat.
 
 # 0:22
 
-** Brief explaination of encryption
+** Brief explanation of encryption
    # make this section brief in the extreme
 
 Classical encryption techniques work by a sender, we'll call her Alice, and a receiver, we'll call him Bob, sharing some pre-arranged secret or a key. Alice /encrypts/ a message with the key, and transmits the encrypted message, or /ciphertext/ to Bob, who can then read the message by /decrypting/ it with a key. An eavesdropper, we'll call her Eve, is unable to intercept the message because she doesn't have the key.
 
 # Graphic: Classical encryption
 
-The lock in this picture is an /encryption algorithm/, that takes a key and a message as inputs and returns ciphertext as output. There are many encryption schemes, for some historical example, Ceaser shift, Vigenere, and the Engigma machine. For modern examples, AES is probably the most common in use today.
+The lock in this picture is an /encryption algorithm/, that takes a key and a message as inputs and returns ciphertext as output. There are many encryption schemes, for some historical example, Ceaser shift, Vigenere, and the Enigma machine. For modern examples, AES is probably the most common in use today.
 
 All of these encryption schemes' security is primarily contingent upon knowing the key. For simple algorithms, however, ciphertext can be broken by exploiting weaknesses in the algorithm. Modern computer encryption algorithms, however, are effectively unbreakable without the key.
 
@@ -27,8 +29,62 @@ There are some newer encryption methods, such as RSA or the Diffie-Hellman schem
 
 * Motivation: case studies
 
+** Child Pornography
 
+The NYT recently ran a story on these two girls: a decade ago their father sexually abused them when they were just 7 and 11 years old. Their father has long since been incarcerated, but explicit pictures of the sisters still circulate on the Internet years after the incident, and the sisters live in fear that they will be recognized by predators.
+
+There is a bill, called the EARN-IT act, which is currently in committee.
+
+ - This bill would mandate that Internet platforms---this would include places like Reddit, Facebook, YouTube, Google, and Dropbox, as well as messaging platforms like Signal, WhatsApp, Telegram, and iMessage---to scan user-uploaded content for illegal material, like child pornography.
+
+ - What this means is that all platforms would have to have full access to every users' uploaded content. While this doesn't seem to be much of a big deal if all you use is Facebook or Google, secure messaging apps would be forced to compromise their security.
+
+EARN-IT is not the only such bill to be introduced; there have been several others.
+
+But doing away with encryption is OK, right?
+
+** Equifax
+
+Well, maybe not.
+
+In 2017, Equifax suffered a data breach that exposed the names, Social Security numbers, birth dates, addresses, and some driver's license numbers of *143 million* American. They also stole credit card numbers for about 209,000 people. Data on people from the UK and Canada were also impacted.
+
+# TODO: Maybe include a graphic of how the attack unfolded here
+
+Business standards /mandate/ that information like this be encrypted to thwart such attacks. That way, even if the attackers were able to access the network, they wouldn't have access to the decryption keys, and sensitive data wouldn't be accessible.
+
+Because Equifax failed to implement this basic security protocol, a third of Americans suffered and many are still suffering repercussions today.
+
+(See https://arstechnica.com/information-technology/2017/09/equifax-hackers-stole-data-for-200k-credit-cards-from-transaction-history/)
+
+** San Bernardino Shooter Case
+
+I'm running out of time, so I'll make this short:
+
+ - Two shooters in San Bernardino county, California, were suspected of having ties to other terrorists
+ - The FBI asked Apple to create a backdoor in their iPhone security to allow the FBI to access the shooters' messages
+ - Apple provided all the help they could, but they declined to create the backdoor, saying that it would be too dangerous a tool
+ - The FBI was eventually able to access the phone without help from Apple, but it required lots of money and specialized equipment like the GreyKey device you see on the left
+
+Apple's argument is that tools used to circumvent encryption will eventually fall into the wrong hands and cause more harm than good.
+
+** Chinese Social Capital and COVID-19 Censorship
+
+As an example of this happening, take a look at China. The Chinese government censors everything about the Tianmen Square massacre; and they recently censored COVID-19 information.
+
+Not only does China block most sites that you and I are accustomed to on the Internet, but they also have access to their citizens' private messages.
+
+I like to think that if Great Britain had the surveillance capabilities of modern states in 1770, the American Revolution would have been quashed instantly.
 
 * Analysis of the conflicts
 
+ - Against encryption :: justice and non-injury to parties harmed by explicit photos circulating online
+ - For encryption :: liberty and justice for oppressed people; non-injury to keep data safe from hackers
+
 * Conclusion, compromises
+
+I personally am persuaded that access to strong, reliable encryption is a good thing, and that mandating that we leave our encryption keys under our doormats, so to speak, would do more harm than good.
+
+I think there are plenty of ways we can still administer justice to wrongdoers and prevent exploitation, but these measures cannot come at the cost of sacrificing privacy and endangering liberty.
+
+There are some neat developments in the works, such as homomorphic encryption, which might allow for some satisfactory compromises. Until then, I think we should err on the side of encryption rather than insecurity.
