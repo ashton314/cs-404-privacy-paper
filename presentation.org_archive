@@ -1,0 +1,28 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /Users/ashton/Library/Mobile Documents/com~apple~CloudDocs/School/Fall 2020/CS 404/paper_1/presentation.org
+
+
+* Brief explanation of encryption
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2020-11-19 Thu 13:58
+  :ARCHIVE_FILE: ~/Library/Mobile Documents/com~apple~CloudDocs/School/Fall 2020/CS 404/paper_1/presentation.org
+  :ARCHIVE_OLPATH: Introduction
+  :ARCHIVE_CATEGORY: presentation
+  :END:
+   # make this section brief in the extreme
+
+Classical encryption techniques work by a sender, we'll call her Alice, and a receiver, we'll call him Bob, sharing some pre-arranged secret or a key. Alice /encrypts/ a message with the key, and transmits the encrypted message, or /ciphertext/ to Bob, who can then read the message by /decrypting/ it with a key. An eavesdropper, we'll call her Eve, is unable to intercept the message because she doesn't have the key.
+
+# Graphic: Classical encryption
+
+The lock in this picture is an /encryption algorithm/, that takes a key and a message as inputs and returns ciphertext as output. There are many encryption schemes, for some historical example, Ceaser shift, Vigenere, and the Enigma machine. For modern examples, AES is probably the most common in use today.
+
+All of these encryption schemes' security is primarily contingent upon knowing the key. For simple algorithms, however, ciphertext can be broken by exploiting weaknesses in the algorithm. Modern computer encryption algorithms, however, are effectively unbreakable without the key.
+
+There are some newer encryption methods, such as RSA or the Diffie-Hellman scheme that allow two parties to communicate without knowing a pre-shared key, but these too can be broken if certain secrets are known by the eavesdropper. It is however not tractable in practice.
+
+# Expensive section: ~1 minute
+# 1:25
+

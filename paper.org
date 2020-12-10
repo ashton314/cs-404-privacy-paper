@@ -5,51 +5,73 @@
 
 For this section we'll discuss the role encryption plays in privacy and some of the ethical issues associated with it's use.
 
+* Introduction on Encryption
+
+Classical encryption techniques work by a sender, we'll call her Alice, and a receiver, we'll call him Bob, sharing some prearranged secret or a key. Alice /encrypts/ a message with the key, and transmits the encrypted message, or /ciphertext/ to Bob, who can then read the message by /decrypting/ it with a key. An eavesdropper, we'll call her Eve, is unable to intercept the message because she doesn't have the key.
+
+# Insert graphic here
+
+The lock in this picture is an /encryption algorithm/, that takes a key and a message as inputs and returns ciphertext as output. There are many encryption schemes, for some historical example, Caesar shift, Vigenère, and the Enigma machine. For modern examples, AES is probably the most common in use today.
+
+All of these encryption schemes' security is primarily contingent upon knowing the key. For simple algorithms, however, ciphertext can be broken by exploiting weaknesses in the algorithm. Modern computer encryption algorithms, however, are effectively unbreakable without the key. Brute-forcing this key would require millions of years of computation time, rendering most modern algorithms unbreakable for all intents and purposes.
+
+There are some newer encryption methods, such as RSA or the Diffie-Hellman scheme that allow two parties to communicate without knowing a pre-shared key, but these too can be broken if certain secrets are known by the eavesdropper. Finding these secrets out, however, is a mathematically intractable problem by classical computers, so they are for all intents and purposes unbreakable.
+
+Algorithms like RSA and Diffie-Hellman allow technologies like HTTPS to work, which encrypts traffic on the web. This both prevents eavesdroppers from intercepting communications, and it also prevents malicious actors from modifying data in-transit. Imagine how problematic it would be if an attacker could swipe your bank credentials while it's on its way to the bank's website. Or how problematic it would be if an attacker injected a virus into a program you were downloading—that program might have been fine when it was sent, but it got tainted when it arrived on your machine.
+
+The important thing to take away from this introduction is that encryption is just a tool to protect information from theft and manipulation. It undergirds the reliability of our Internet infrastructure, and allows our digital platforms to operate reliably. Never has the importance of reliable, secure digital systems been made more clear than the COVID-19 pandemic: we teach online, we worship online, we visit with friends online, we call loved ones online—all these things are made possible by the Internet and, by extension, the encryption algorithms that let data be passed back and forth securely.
+
+But encryption is not an unalloyed good—it is like a chain: it can be used for both good and bad purposes. Bad people using encryption to make it difficult to catch them is a driving point of the debate surrounding the usage of encryption by the public. Many governments have attempted to legislate changes to encryption algorithms that would make it possible for encrypted communications to be decrypted with a single master key. However, this would leave users of encryption vulnerable to hackers and abuses by their own government.
+
 * Case Studies
 
 ** Child Pornography
 
-One year ago the New York Times ran an article [fn:1] on two sisters who, ten years after being sexually abused by their father, continue to experience exposeure and harassment because their father shared explicit photoes of them online. Those photos continue to circulate in part because companies do not filter uploaded content.
+One year ago the New York Times ran an article [fn:1] on two sisters who, ten years after being sexually abused by their father, continue to experience exposure and harassment because their father shared explicit photos of them online. Those photos continue to circulate in part because companies do not filter uploaded content.
 
 The NYT article details some processes by which uploaded content can be quickly screened for matches in databases of "illegal" images.
 
-This is part of the thrust of the EARN-IT Act. However, the changes present in the EARN-IT act have some less helpful ramifications. The EARN-IT act would compel all online service operators to scan any user-uploaded material for content deemed "illegal".
+There is a bill, called the EARN-IT act, which is currently in committee. This bill would mandate that Internet platforms---this would include places like Reddit, Facebook, YouTube, Google, and Dropbox, as well as messaging platforms like Signal, WhatsApp, Telegram, and iMessage---to scan user-uploaded content for illegal material, like child pornography.
 
-This would extend to chat platforms and other means of communication.
+What this means is that all platforms would have to have full access to every users' uploaded content. While this doesn't seem to be much of a big deal if all you use is Facebook or Google, secure messaging apps would be forced to compromise their security.
 
-*** End-to-end encryption
+Before you agree that encryption systems should be done away with to help protect the children, consider a case when the absence of encryption caused great harm to millions of Americans.
 
-    # Include explaination of e2e systems here
+** Equifax Data breach
 
-Let's look at a case when encryption was /not/ employed as it should have been.
+In 2017, Equifax suffered a data breach that exposed the names, Social Security numbers, birth dates, addresses, and some driver's license numbers of *143 million* American. They also stole credit card numbers for about 209,000 people. Data on people from the UK and Canada were also impacted.
 
-** Equifax Databreach
+# TODO: Maybe include a graphic of how the attack unfolded here
 
-   # I might be able to find a good graphic to illustrate the scale of
-   # the damage of the breach
+Business standards /mandate/ that information like this be encrypted to thwart such attacks. That way, even if the attackers were able to access the network, they wouldn't have access to the decryption keys, and sensitive data wouldn't be accessible.
 
-Encryption is important for protecting people. What if it protects the wrong kinds of people?
+Because Equifax failed to implement this basic security protocol, more than half of American adults had their data stolen.
 
-** San Bernardino Shooter Case
+* Ethical Issues at Play
 
-   # Locked iPhone; Apple wouldn't comply, yadda yadda yadda...
+The arguments in favor of weakening encryption to allow law-enforcement access are mostly aimed at /preventing harm/. In the case of child pornography, law-enforcement would have some means of finding and deleting illegal images. It would also help us bring about /justice/ and punish those who perpetrate such crimes. A topic I was not able to fit in was that of counter-terrorism: being able to read everyone's messages would allow governments to more accurately anticipate the actions of terrorists.
 
-DOJ insists that it's not weakening encryption, but it really is.
-
-But not all governments are benevolent.
-
-** Chinese Social Capital and COVID-19 Censorship
-
-   # With pervasive surveillance, the American Revolution would never
-   # have happened.
+But on the other side, encryption also prevents harm by protecting innocent people from hackers. Encryption also protects /privacy/, which is a fundamental prerequisite to /liberty/. Furthermore, we have no guarantee that weakening encryption would help stop more terrorists—they're going to be breaking the law no matter what; using illegal algorithms that allow them to communicate securely would be of no import to them. Finally, we have no way of being sure that governments would not overstep their bounds. In China, for instance, the government is able to censor and punish people based on private communications because the government is able to eavesdrop on all their citizens' private conversions.
 
 * Conclusion
 
-Weakening encryption will weaken the means by which we can solve the root of these problems. The difficulty lies in that the victims of weakening encryption are often further removed from the problem than the victims of /not/ weakening encryption.
+Encryption is just a tool. It's a tool that is important for maintaining our safety, privacy, and freedom. When it is not used, the results can be disastrous. However, it is not without trade-offs. Bad actors can use encryption too. But I believe that these problems cannot be solved just by weakening encryption to allow the exceptional access that governments want. We cannot sacrifice the security, privacy, and liberty of everyone just so we can bring justice to a few bad actors.
 
-We have harm-avoidance and justice pitted against freedom, privacy, and security. This is a difficult problem, but I believe we can find solutions /not/ through weakening encryption, but by focusing on the root problems and using side-channel attacks.
+* Further Reading
 
-# Consider looking into homomorphic encryption
+There were some important issues that I was not able to address within the page limit. Below are some brief summaries of the issues.
+
+** San Bernardino Shooter Case
+
+Two shooters in San Bernardino county, California, were suspected of having ties to other terrorists. The FBI asked Apple to create a backdoor in their iPhone security to allow the FBI to access the shooters' messages. Apple provided all the help they could, but they declined to create the backdoor, saying that it would be too dangerous a tool. The FBI was eventually able to access the phone without help from Apple, but it required lots of money and specialized equipment.
+
+** Chinese Social Capital and COVID-19 Censorship
+
+As an example of flaws in encryption exploited by a government for surveillance, take a look at China. The Chinese government censors everything about the Tiananmen Square massacre; and they recently censored COVID-19 information. Not only does China block most sites that you and I are accustomed to on the Internet, but they also have access to their citizens' private messages. I like to think that if Great Britain had the surveillance capabilities of modern states in 1770, the American Revolution would have been quashed instantly.
+
+** Homomorphic encryption
+
+There are some fascinating developments in the field of homomorphic encryption; a fully-realized system might permit a compromise to be made in some areas: secure encryption, but the ability to match an encrypted image against a database of child pornography without revealing what the image actually is. I'm unfamiliar with this field, so I could be completely incorrect.
 
 * Footnotes
 
